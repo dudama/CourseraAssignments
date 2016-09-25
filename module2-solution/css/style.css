@@ -1,0 +1,94 @@
+* { 
+	box-sizing: border-box; 
+}
+ 
+ body {
+ 	font-family: Helvetica;
+ }
+
+ h1 {
+ 	text-align: center;
+ 	font-size: 30px;
+ 	margin-bottom: 50px;
+ }
+ .corner {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	border: 1px solid black;
+ 	font-size: 20px;
+ }
+
+ #apps, #mains, #drinks {
+ 	 
+ 	padding: 12px;
+ 	text-align: center;
+ }
+
+ #apps .content  {
+ 	font-size: 1rem;
+ 	background-color: #444444; 
+ 	position: relative;
+ 	border:1px black;
+ 	padding-top: 12px;
+ 	color: white;
+ }
+ 
+ #mains .content {
+ 	font-size: 1rem;
+ 	background-color: #606860; 
+ 	position: relative;
+ 	border:1px black;
+ 	padding-top: 12px;
+ 	color: white;
+ }
+
+  #drinks .content {
+ 	font-size: 1rem;
+ 	background-color: #C0C0C0; 
+ 	position: relative;
+ 	border:1px black;
+ 	padding-top: 12px;
+ 	color: white;
+ }
+
+#apps .corner {
+	background-color: #666699;
+
+}
+
+#mains .corner {
+	background-color: #3366ff;
+}
+
+#drinks .corner {
+	background-color: #00ff99;
+}
+
+@media only screen and (min-width: 992px) {
+	#apps, #mains, #drinks {
+		display: inline-block;
+		width: 33%;
+	} 
+}
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+	#apps, #mains, #drinks {
+		display: inline-block;
+	} 
+
+	#apps, #mains {
+		width: 49.7%;
+	}
+
+	#drinks {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#apps, #mains, #drinks {
+		display: inline-block;
+		width: 100%;
+	} 
+}
